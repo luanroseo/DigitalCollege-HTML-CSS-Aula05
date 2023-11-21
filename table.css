@@ -1,0 +1,28 @@
+#table-2 table{
+    width: 100%;
+    border-collapse: collapse;
+}
+
+#table-2 table td, 
+#table-2 table th{
+    border: 1.5px solid;
+}
+
+#table-2 table th{
+    padding: 10px;
+}
+
+#table-2 table hr{
+    border: none;
+    height: 1px;
+    width: 15px;
+    background-color: #ccc;
+}
+
+#table-2 table tbody tr:hover{
+    background-color: #ccc;
+}
+
+#table-2 table td:nth-child(3){
+    background-color: #ccc;
+}

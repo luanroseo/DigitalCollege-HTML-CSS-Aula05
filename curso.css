@@ -1,0 +1,130 @@
+body {
+    background-color: #111010;
+    color: white;
+    font-family:bebas neue;
+    }
+  
+  .container {
+    width: 50%;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  
+  .page-title {
+    text-align: center;
+  }
+  
+  .course {
+   position: relative;
+   flex-basis: 190px;
+   transition: background-color 0.5s ease;
+   background-color: black;
+   margin: 20px;
+   padding: 10px;
+   border-radius: 10px;
+   color: white;
+   z-index: 1;
+   cursor: pointer
+  }
+  
+  .course:nth-child(1){
+    border-right: 40px solid red;
+  }
+  
+  .course:nth-child(2){
+    border-right: 40px solid blue;
+  }
+  
+  .course:nth-child(3){
+    border-right: 40px solid green;
+  }
+  
+  .course:nth-child(4){
+    border-right: 40px solid purple;
+  }
+  
+  .course:nth-child(5){
+    border-right: 40px solid yellow;
+  }
+  
+  .course:nth-child(6){
+    border-right: 40px solid #FF4500;
+  }
+  
+  .course:nth-child(7){
+    border-right: 40px solid #FF1493;
+  }
+  
+  .course:nth-child(8){
+    border-right: 40px solid #00FFFF;
+  }
+  
+  
+  .course::before {
+   content: "";
+   position: absolute;
+   top: 0;
+   right: 0;
+   width: 0;
+   height: 100%;
+   border-top-left-radius: 10px; 
+   border-bottom-left-radius: 10px;
+   transition: width 0.5s ease;
+   z-index: -1;
+  }
+  
+  .course:hover::before {
+    width: 100%;
+  }
+  .course:nth-child(1):hover::before {
+   background-color: red;
+  }
+  
+  .course:nth-child(2):hover::before {
+   background-color: blue;
+  }
+  
+  .course:nth-child(3):hover::before {
+   background-color: green;
+  }
+  
+  .course:nth-child(4):hover::before {
+   background-color: purple;
+  }
+  
+  .course:nth-child(5):hover::before {
+   background-color: yellow;
+  }
+  
+  .course:nth-child(6):hover::before {
+   background-color: #FF4500;
+  }
+  
+  .course:nth-child(7):hover::before {
+   background-color: #FF1493;
+  }
+  
+  .course:nth-child(8):hover::before {
+   background-color: #00FFFF;
+  }
+  
+  .course:hover {
+   color: black;
+  }
+  
+  .course f{
+    font-size: 15px;
+  }
+  .course h2 {
+    margin:4;
+    font-size: 26x;
+  }
+  
+  .course p {
+    margin: 0;
+    font-size: 0.9em;
+  }
+  
+  

@@ -1,0 +1,32 @@
+.cursos{
+    list-style: none;
+}
+
+.curso-item{
+    background-color: #000; /*Cor do fundo*/
+    color:#fff;             /*Cor da fonte*/
+    max-width: 150px;         /*Largura máxima do elemento, no caso não poderá passar de 150px*/
+    width: 150px;             /*Largura*/
+    height: 50px;             /*Altura*/
+    padding: 10px;            /*Espaçamento interno*/
+    position: relative;       /*posição "relativa"*/
+    overflow: hidden;         /*Overflow - serve para ver os limites máximos, hidden - para escutar a barra*/
+    border-radius: 13px;      /*Arrendodar borda do bloco em questão*/ 
+    z-index: 1;               /*Move os elementos para background ou first*/
+}
+
+.bg-hover{
+    display: block;
+    height: 100%;
+    width: 100%;
+    background-color: red;
+    position: absolute;
+    top: 0;                   /*espaço entre elemento absoluto e relativo*/
+    right: -140px; 
+    z-index: -1;  
+    transition: 0.5s ease;             
+}
+
+.curso-item:hover .bg-hover{
+    right: 0;
+}
